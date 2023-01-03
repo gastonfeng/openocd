@@ -19,6 +19,7 @@
 #ifdef HAVE_CONFIG_H
 #include "config.h"
 #endif
+#include"hid.c"
 #include "openocd.h"
 #include "helper/system.h"
 
@@ -30,7 +31,6 @@
  *
  * Those applications will have their own main() implementation
  * and use bits and pieces from openocd.c. */
-
 int main(int argc, char *argv[])
 {
 	/* disable buffering otherwise piping to logs causes problems work */

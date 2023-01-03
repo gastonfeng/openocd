@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1637569638 source:d:\openocd_wsl\src\main.c
+	"config.h"
+	"openocd.h"
+	"helper/system.h"
+
+1637569638 d:\openocd_wsl\src\openocd.h
+
+1637569637 d:\openocd_wsl\src\helper\system.h
+	<winsock2.h>
+	<ws2tcpip.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<ctype.h>
+	<errno.h>
+	<time.h>
+	<sys/time.h>
+	<sys/socket.h>
+	<poll.h>
+	<netinet/in.h>
+	<sys/select.h>
+	<sys/param.h>
+	<unistd.h>
+	<fcntl.h>
+

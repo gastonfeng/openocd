@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
+	<ActiveTarget name="Debug" />
+	<File name="..\src\jtag\drivers\cmsis_dap.c" open="1" top="0" tabpos="29" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="37424" topLine="1299" />
+		</Cursor>
+	</File>
+	<File name="..\src\transport\transport.c" open="1" top="0" tabpos="33" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5504" topLine="135" />
+		</Cursor>
+	</File>
+	<File name="..\src\jtag\interfaces.h" open="1" top="0" tabpos="26" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2361" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="..\src\flash\nor\drivers.c" open="1" top="0" tabpos="23" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="130" />
+		</Cursor>
+	</File>
+	<File name="..\src\helper\log.h" open="1" top="0" tabpos="20" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4998" topLine="93" />
+		</Cursor>
+	</File>
+	<File name="..\src\helper\options.c" open="1" top="0" tabpos="19" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="6471" topLine="210" />
+		</Cursor>
+	</File>
+	<File name="..\src\jtag\adapter.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="670" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="..\src\helper\command.c" open="1" top="0" tabpos="31" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="26429" topLine="928" />
+		</Cursor>
+	</File>
+	<File name="..\src\target\arm_adi_v5.h" open="1" top="0" tabpos="35" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="16892" topLine="455" />
+		</Cursor>
+	</File>
+	<File name="..\src\jtag\interfaces.c" open="1" top="0" tabpos="28" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3867" topLine="73" />
+		</Cursor>
+	</File>
+	<File name="..\src\helper\configuration.c" open="1" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3692" topLine="91" />
+		</Cursor>
+	</File>
+	<File name="..\src\helper\list.h" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1978" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="..\src\transport\transport.h" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3194" topLine="63" />
+		</Cursor>
+	</File>
+	<File name="..\src\helper\types.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1649" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="..\jimtcl\jim.c" open="1" top="0" tabpos="39" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="334156" topLine="10683" />
+		</Cursor>
+	</File>
+	<File name="..\src\target\adi_v5_swd.c" open="1" top="0" tabpos="36" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="13224" topLine="490" />
+		</Cursor>
+	</File>
+	<File name="..\src\target\arm_tpiu_swo.c" open="1" top="1" tabpos="30" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="21308" topLine="675" />
+		</Cursor>
+	</File>
+	<File name="..\src\helper\replacements.c" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3468" topLine="74" />
+		</Cursor>
+	</File>
+	<File name="..\src\flash\nor\core.c" open="1" top="0" tabpos="21" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="20507" topLine="725" />
+		</Cursor>
+	</File>
+	<File name="..\src\flash\nor\tcl.c" open="1" top="0" tabpos="22" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="32384" topLine="1239" />
+		</Cursor>
+	</File>
+	<File name="..\src\helper\log.c" open="1" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="13179" topLine="468" />
+		</Cursor>
+	</File>
+	<File name="..\src\jtag\core.c" open="1" top="0" tabpos="18" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="52823" topLine="1885" />
+		</Cursor>
+	</File>
+	<File name="..\src\helper\binarybuffer.h" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="6821" topLine="140" />
+		</Cursor>
+	</File>
+	<File name="..\src\openocd.c" open="1" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5295" topLine="135" />
+		</Cursor>
+	</File>
+	<File name="..\src\target\arm_dap.c" open="1" top="0" tabpos="37" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2882" topLine="30" />
+		</Cursor>
+	</File>
+	<File name="..\src\jtag\drivers\libftdi_helper.h" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="142" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="..\src\jtag\drivers\cmsis_dap_usb_hid.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2554" topLine="1" />
+		</Cursor>
+	</File>
+	<File name="..\src\helper\replacements.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4189" topLine="88" />
+		</Cursor>
+	</File>
+	<File name="..\src\flash\nand\mxc.c" open="1" top="0" tabpos="24" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="23058" topLine="676" />
+		</Cursor>
+	</File>
+	<File name="..\src\target\arm_adi_v5.c" open="1" top="0" tabpos="34" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="10205" topLine="234" />
+		</Cursor>
+	</File>
+	<File name="..\src\jtag\adapter.c" open="1" top="0" tabpos="25" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2936" topLine="70" />
+		</Cursor>
+	</File>
+	<File name="..\src\flash\common.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1297" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="..\src\jtag\aice\aice_usb.c" open="1" top="0" tabpos="17" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="61562" topLine="2066" />
+		</Cursor>
+	</File>
+	<File name="..\src\main.c" open="1" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1774" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="..\src\jtag\hla\hla_transport.c" open="1" top="0" tabpos="32" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="6294" topLine="191" />
+		</Cursor>
+	</File>
+	<File name="..\src\jtag\interface.c" open="1" top="0" tabpos="27" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="418" />
+		</Cursor>
+	</File>
+	<File name="..\src\jtag\drivers\libusb_helper.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1497" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="..\config.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="7935" topLine="247" />
+		</Cursor>
+	</File>
+	<File name="..\src\jtag\swd.h" open="1" top="0" tabpos="38" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2530" topLine="13" />
+		</Cursor>
+	</File>
+</CodeBlocks_layout_file>

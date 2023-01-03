@@ -1,0 +1,1310 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="openocd" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/openocd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters='-s C:\Users\gastonfeng\.platformio/packages/tool-openocd/scripts -f interface/cmsis-dap.cfg -f target/stm32h7x.cfg -c &quot;stm32h7x.cpu0 tpiu config internal - uart off 480000000 115200&quot;  -c &quot;tcl_port 6667&quot;' />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/openocd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-DHAVE_USLEEP" />
+			<Add option="-D_GETTIMEOFDAY_DEFINED" />
+			<Add option="-DHAVE_CONFIG_H" />
+			<Add option='-DBINDIR=\&quot;.\&quot;' />
+			<Add option='-DPKGDATADIR=\&quot;data\&quot;' />
+			<Add option="-DBUILD_CMSIS_DAP_USB=1" />
+			<Add directory="../jimtcl" />
+			<Add directory="../src" />
+			<Add directory="E:/Download/openocd-v0.11.0-i686-w64-mingw32.tar/openocd-v0.11.0-i686-w64-mingw32/include/libusb-1.0/" />
+			<Add directory="E:/Download/openocd-v0.11.0-i686-w64-mingw32.tar/openocd-v0.11.0-i686-w64-mingw32/include/hidapi/" />
+			<Add directory="../../openocd_wsl" />
+		</Compiler>
+		<Linker>
+			<Add library="usb-1.0" />
+			<Add library="hid" />
+			<Add library="setupapi" />
+			<Add library="ws2_32" />
+			<Add directory="E:/Download/libusb-1.0.24/MinGW64/static" />
+			<Add directory="E:/Download/openocd-v0.11.0-i686-w64-mingw32.tar/openocd-v0.11.0-i686-w64-mingw32/lib" />
+		</Linker>
+		<Unit filename="../../hidapi/windows/hid.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../config.h" />
+		<Unit filename="../contrib/libdcc/dcc_stdio.h" />
+		<Unit filename="../contrib/loaders/debug/xscale/protocol.h" />
+		<Unit filename="../contrib/loaders/flash/at91sam7x/at91sam7x_ocl_flash.script" />
+		<Unit filename="../contrib/loaders/flash/at91sam7x/dcc.h" />
+		<Unit filename="../contrib/loaders/flash/at91sam7x/ocl.h" />
+		<Unit filename="../contrib/loaders/flash/at91sam7x/platform.h" />
+		<Unit filename="../contrib/loaders/flash/at91sam7x/samflash.h" />
+		<Unit filename="../contrib/loaders/flash/at91sam7x/samregs.h" />
+		<Unit filename="../contrib/loaders/flash/cc26xx/flash.h" />
+		<Unit filename="../contrib/loaders/flash/cc26xx/flashloader.h" />
+		<Unit filename="../contrib/loaders/flash/cc26xx/hw_regs.h" />
+		<Unit filename="../contrib/loaders/flash/fm4/fm4.h" />
+		<Unit filename="../contrib/loaders/flash/msp432/MSP432E4_FlashLibIf.h" />
+		<Unit filename="../contrib/loaders/flash/msp432/MSP432P4_FlashLibIf.h" />
+		<Unit filename="../contrib/loaders/flash/msp432/driverlib.h" />
+		<Unit filename="../contrib/loaders/flash/msp432/msp432e4x.h" />
+		<Unit filename="../contrib/loaders/flash/msp432/msp432p401x.h" />
+		<Unit filename="../contrib/loaders/flash/msp432/msp432p411x.h" />
+		<Unit filename="../contrib/loaders/flash/npcx/npcx_flash.h" />
+		<Unit filename="../contrib/loaders/flash/npcx/npcx_flash_config.h" />
+		<Unit filename="../jimtcl/_glob.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../jimtcl/_initjimsh.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../jimtcl/_load-static-exts.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../jimtcl/_nshelper.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../jimtcl/_oo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../jimtcl/_stdlib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../jimtcl/_tclcompat.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../jimtcl/_tree.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../jimtcl/jim-aio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../jimtcl/jim-array.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../jimtcl/jim-clock.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../jimtcl/jim-config.h" />
+		<Unit filename="../jimtcl/jim-eventloop.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../jimtcl/jim-eventloop.h" />
+		<Unit filename="../jimtcl/jim-exec.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../jimtcl/jim-file.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../jimtcl/jim-format.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../jimtcl/jim-history.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../jimtcl/jim-interactive.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../jimtcl/jim-interp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../jimtcl/jim-json.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../jimtcl/jim-load.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../jimtcl/jim-namespace.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../jimtcl/jim-nosignal.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../jimtcl/jim-pack.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../jimtcl/jim-package.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../jimtcl/jim-readdir.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../jimtcl/jim-regexp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../jimtcl/jim-signal.h" />
+		<Unit filename="../jimtcl/jim-subcmd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../jimtcl/jim-subcmd.h" />
+		<Unit filename="../jimtcl/jim-tclprefix.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../jimtcl/jim-tty.h" />
+		<Unit filename="../jimtcl/jim-win32.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../jimtcl/jim-win32compat.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../jimtcl/jim-win32compat.h" />
+		<Unit filename="../jimtcl/jim.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../jimtcl/jim.h" />
+		<Unit filename="../jimtcl/jimautoconf.h" />
+		<Unit filename="../jimtcl/jimiocompat.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../jimtcl/jimiocompat.h" />
+		<Unit filename="../jimtcl/jimregexp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../jimtcl/jimregexp.h" />
+		<Unit filename="../jimtcl/jsmn/jsmn.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../jimtcl/jsmn/jsmn.h" />
+		<Unit filename="../jimtcl/linenoise.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../jimtcl/linenoise.h" />
+		<Unit filename="../jimtcl/sqlite3/sqlite3.h" />
+		<Unit filename="../jimtcl/sqlite3/sqlite3ext.h" />
+		<Unit filename="../jimtcl/utf8.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../jimtcl/utf8.h" />
+		<Unit filename="../src/flash/common.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/common.h" />
+		<Unit filename="../src/flash/nand/arm_io.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nand/arm_io.h" />
+		<Unit filename="../src/flash/nand/at91sam9.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nand/core.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nand/core.h" />
+		<Unit filename="../src/flash/nand/davinci.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nand/driver.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nand/driver.h" />
+		<Unit filename="../src/flash/nand/ecc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nand/ecc_kw.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nand/fileio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nand/fileio.h" />
+		<Unit filename="../src/flash/nand/imp.h" />
+		<Unit filename="../src/flash/nand/lpc3180.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nand/lpc3180.h" />
+		<Unit filename="../src/flash/nand/lpc32xx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nand/lpc32xx.h" />
+		<Unit filename="../src/flash/nand/mx3.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nand/mx3.h" />
+		<Unit filename="../src/flash/nand/mxc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nand/mxc.h" />
+		<Unit filename="../src/flash/nand/nonce.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nand/nuc910.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nand/nuc910.h" />
+		<Unit filename="../src/flash/nand/orion.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nand/s3c2410.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nand/s3c2412.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nand/s3c2440.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nand/s3c2443.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nand/s3c24xx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nand/s3c24xx.h" />
+		<Unit filename="../src/flash/nand/s3c24xx_regs.h" />
+		<Unit filename="../src/flash/nand/s3c6400.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nand/tcl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/aduc702x.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/aducm360.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/ambiqmicro.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/at91sam3.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/at91sam4.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/at91sam4l.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/at91sam7.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/at91samd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/ath79.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/atsame5.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/atsamv.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/avrf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/bluenrg-x.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/bluenrg-x.h" />
+		<Unit filename="../src/flash/nor/cc26xx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/cc26xx.h" />
+		<Unit filename="../src/flash/nor/cc3220sf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/cc3220sf.h" />
+		<Unit filename="../src/flash/nor/cfi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/cfi.h" />
+		<Unit filename="../src/flash/nor/core.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/core.h" />
+		<Unit filename="../src/flash/nor/driver.h" />
+		<Unit filename="../src/flash/nor/drivers.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/dsp5680xx_flash.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/efm32.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/em357.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/esirisc_flash.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/faux.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/fespi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/fm3.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/fm4.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/imp.h" />
+		<Unit filename="../src/flash/nor/jtagspi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/kinetis.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/kinetis_ke.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/lpc2000.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/lpc288x.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/lpc2900.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/lpcspifi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/max32xxx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/mdr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/mrvlqspi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/msp432.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/msp432.h" />
+		<Unit filename="../src/flash/nor/niietcm4.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/non_cfi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/non_cfi.h" />
+		<Unit filename="../src/flash/nor/npcx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/nrf5.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/numicro.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/ocl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/ocl.h" />
+		<Unit filename="../src/flash/nor/pic32mx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/psoc4.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/psoc5lp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/psoc6.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/renesas_rpchf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/rp2040.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/sfdp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/sfdp.h" />
+		<Unit filename="../src/flash/nor/sh_qspi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/sim3x.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/spi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/spi.h" />
+		<Unit filename="../src/flash/nor/stellaris.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/stm32f1x.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/stm32f2x.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/stm32h7x.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/stm32l4x.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/stm32l4x.h" />
+		<Unit filename="../src/flash/nor/stm32lx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/stmqspi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/stmqspi.h" />
+		<Unit filename="../src/flash/nor/stmsmi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/str7x.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/str9x.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/str9xpec.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/swm050.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/tcl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/tms470.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/virtual.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/w600.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/xcf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/xmc1xxx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/flash/nor/xmc4xxx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/hello.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/hello.h" />
+		<Unit filename="../src/helper/align.h" />
+		<Unit filename="../src/helper/binarybuffer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/helper/binarybuffer.h" />
+		<Unit filename="../src/helper/bits.h" />
+		<Unit filename="../src/helper/command.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/helper/command.h" />
+		<Unit filename="../src/helper/configuration.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/helper/configuration.h" />
+		<Unit filename="../src/helper/fileio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/helper/fileio.h" />
+		<Unit filename="../src/helper/jep106.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/helper/jep106.h" />
+		<Unit filename="../src/helper/jim-nvp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/helper/jim-nvp.h" />
+		<Unit filename="../src/helper/list.h" />
+		<Unit filename="../src/helper/log.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/helper/log.h" />
+		<Unit filename="../src/helper/options.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/helper/replacements.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/helper/replacements.h" />
+		<Unit filename="../src/helper/system.h" />
+		<Unit filename="../src/helper/time_support.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/helper/time_support.h" />
+		<Unit filename="../src/helper/time_support_common.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/helper/types.h" />
+		<Unit filename="../src/helper/util.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/helper/util.h" />
+		<Unit filename="../src/jtag/adapter.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/jtag/adapter.h" />
+		<Unit filename="../src/jtag/aice/aice_interface.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/jtag/aice/aice_interface.h" />
+		<Unit filename="../src/jtag/aice/aice_pipe.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/jtag/aice/aice_pipe.h" />
+		<Unit filename="../src/jtag/aice/aice_port.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/jtag/aice/aice_port.h" />
+		<Unit filename="../src/jtag/aice/aice_transport.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/jtag/aice/aice_transport.h" />
+		<Unit filename="../src/jtag/aice/aice_usb.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/jtag/aice/aice_usb.h" />
+		<Unit filename="../src/jtag/commands.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/jtag/commands.h" />
+		<Unit filename="../src/jtag/core.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/jtag/drivers/OpenULINK/include/common.h" />
+		<Unit filename="../src/jtag/drivers/OpenULINK/include/delay.h" />
+		<Unit filename="../src/jtag/drivers/OpenULINK/include/io.h" />
+		<Unit filename="../src/jtag/drivers/OpenULINK/include/jtag.h" />
+		<Unit filename="../src/jtag/drivers/OpenULINK/include/main.h" />
+		<Unit filename="../src/jtag/drivers/OpenULINK/include/msgtypes.h" />
+		<Unit filename="../src/jtag/drivers/OpenULINK/include/protocol.h" />
+		<Unit filename="../src/jtag/drivers/OpenULINK/include/reg_ezusb.h" />
+		<Unit filename="../src/jtag/drivers/OpenULINK/include/usb.h" />
+		<Unit filename="../src/jtag/drivers/bitbang.h" />
+		<Unit filename="../src/jtag/drivers/bitq.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/jtag/drivers/bitq.h" />
+		<Unit filename="../src/jtag/drivers/cmsis_dap.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/jtag/drivers/cmsis_dap.h" />
+		<Unit filename="../src/jtag/drivers/cmsis_dap_usb_bulk.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/jtag/drivers/cmsis_dap_usb_hid.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/jtag/drivers/driver.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/jtag/drivers/ft232r.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/jtag/drivers/jtag_dpi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/jtag/drivers/jtag_vpi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/jtag/drivers/kitprog.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/jtag/drivers/libftdi_helper.h" />
+		<Unit filename="../src/jtag/drivers/libjaylink/config.h" />
+		<Unit filename="../src/jtag/drivers/libjaylink/libjaylink/libjaylink-internal.h" />
+		<Unit filename="../src/jtag/drivers/libjaylink/libjaylink/libjaylink.h" />
+		<Unit filename="../src/jtag/drivers/libjaylink/libjaylink/version.h" />
+		<Unit filename="../src/jtag/drivers/libusb_helper.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/jtag/drivers/libusb_helper.h" />
+		<Unit filename="../src/jtag/drivers/minidriver_imp.h" />
+		<Unit filename="../src/jtag/drivers/mpsse.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/jtag/drivers/mpsse.h" />
+		<Unit filename="../src/jtag/drivers/nulink_usb.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/jtag/drivers/osbdm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/jtag/drivers/rlink.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/jtag/drivers/rlink.h" />
+		<Unit filename="../src/jtag/drivers/rlink_dtc_cmd.h" />
+		<Unit filename="../src/jtag/drivers/rlink_ep1_cmd.h" />
+		<Unit filename="../src/jtag/drivers/rlink_speed_table.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/jtag/drivers/rlink_st7.h" />
+		<Unit filename="../src/jtag/drivers/stlink_usb.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/jtag/drivers/ti_icdi_usb.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/jtag/drivers/usb_blaster/ublast_access.h" />
+		<Unit filename="../src/jtag/drivers/usbprog.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/jtag/drivers/versaloon/usbtoxxx/usbtoxxx.h" />
+		<Unit filename="../src/jtag/drivers/versaloon/usbtoxxx/usbtoxxx_internal.h" />
+		<Unit filename="../src/jtag/drivers/versaloon/versaloon.h" />
+		<Unit filename="../src/jtag/drivers/versaloon/versaloon_include.h" />
+		<Unit filename="../src/jtag/drivers/versaloon/versaloon_internal.h" />
+		<Unit filename="../src/jtag/drivers/xds110.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/jtag/hla/hla_interface.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/jtag/hla/hla_interface.h" />
+		<Unit filename="../src/jtag/hla/hla_layout.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/jtag/hla/hla_layout.h" />
+		<Unit filename="../src/jtag/hla/hla_tcl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/jtag/hla/hla_tcl.h" />
+		<Unit filename="../src/jtag/hla/hla_transport.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/jtag/hla/hla_transport.h" />
+		<Unit filename="../src/jtag/interface.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/jtag/interface.h" />
+		<Unit filename="../src/jtag/interfaces.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/jtag/interfaces.h" />
+		<Unit filename="../src/jtag/jtag.h" />
+		<Unit filename="../src/jtag/minidriver.h" />
+		<Unit filename="../src/jtag/swd.h" />
+		<Unit filename="../src/jtag/swim.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/jtag/swim.h" />
+		<Unit filename="../src/jtag/tcl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/jtag/tcl.h" />
+		<Unit filename="../src/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/openocd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/openocd.h" />
+		<Unit filename="../src/pld/pld.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/pld/pld.h" />
+		<Unit filename="../src/pld/virtex2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/pld/virtex2.h" />
+		<Unit filename="../src/pld/xilinx_bit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/pld/xilinx_bit.h" />
+		<Unit filename="../src/rtos/FreeRTOS.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/rtos/ThreadX.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/rtos/chibios.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/rtos/chromium-ec.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/rtos/eCos.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/rtos/embKernel.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/rtos/hwthread.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/rtos/linux.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/rtos/linux_header.h" />
+		<Unit filename="../src/rtos/mqx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/rtos/nuttx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/rtos/nuttx_header.h" />
+		<Unit filename="../src/rtos/riot.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/rtos/rtos.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/rtos/rtos.h" />
+		<Unit filename="../src/rtos/rtos_chibios_stackings.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/rtos/rtos_chibios_stackings.h" />
+		<Unit filename="../src/rtos/rtos_ecos_stackings.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/rtos/rtos_ecos_stackings.h" />
+		<Unit filename="../src/rtos/rtos_embkernel_stackings.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/rtos/rtos_embkernel_stackings.h" />
+		<Unit filename="../src/rtos/rtos_mqx_stackings.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/rtos/rtos_mqx_stackings.h" />
+		<Unit filename="../src/rtos/rtos_riot_stackings.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/rtos/rtos_riot_stackings.h" />
+		<Unit filename="../src/rtos/rtos_standard_stackings.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/rtos/rtos_standard_stackings.h" />
+		<Unit filename="../src/rtos/rtos_ucos_iii_stackings.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/rtos/rtos_ucos_iii_stackings.h" />
+		<Unit filename="../src/rtos/uCOS-III.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/rtos/zephyr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/rtt/rtt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/rtt/rtt.h" />
+		<Unit filename="../src/rtt/tcl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/server/gdb_server.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/server/gdb_server.h" />
+		<Unit filename="../src/server/ipdbg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/server/ipdbg.h" />
+		<Unit filename="../src/server/rtt_server.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/server/rtt_server.h" />
+		<Unit filename="../src/server/server.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/server/server.h" />
+		<Unit filename="../src/server/server_stubs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/server/tcl_server.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/server/tcl_server.h" />
+		<Unit filename="../src/server/telnet_server.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/server/telnet_server.h" />
+		<Unit filename="../src/svf/svf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/svf/svf.h" />
+		<Unit filename="../src/target/a64_disassembler.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/a64_disassembler.h" />
+		<Unit filename="../src/target/aarch64.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/aarch64.h" />
+		<Unit filename="../src/target/adi_v5_dapdirect.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/adi_v5_jtag.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/adi_v5_swd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/algorithm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/algorithm.h" />
+		<Unit filename="../src/target/arc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/arc.h" />
+		<Unit filename="../src/target/arc_cmd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/arc_cmd.h" />
+		<Unit filename="../src/target/arc_jtag.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/arc_jtag.h" />
+		<Unit filename="../src/target/arc_mem.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/arc_mem.h" />
+		<Unit filename="../src/target/arm.h" />
+		<Unit filename="../src/target/arm11.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/arm11.h" />
+		<Unit filename="../src/target/arm11_dbgtap.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/arm11_dbgtap.h" />
+		<Unit filename="../src/target/arm720t.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/arm720t.h" />
+		<Unit filename="../src/target/arm7_9_common.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/arm7_9_common.h" />
+		<Unit filename="../src/target/arm7tdmi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/arm7tdmi.h" />
+		<Unit filename="../src/target/arm920t.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/arm920t.h" />
+		<Unit filename="../src/target/arm926ejs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/arm926ejs.h" />
+		<Unit filename="../src/target/arm946e.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/arm946e.h" />
+		<Unit filename="../src/target/arm966e.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/arm966e.h" />
+		<Unit filename="../src/target/arm9tdmi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/arm9tdmi.h" />
+		<Unit filename="../src/target/arm_adi_v5.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/arm_adi_v5.h" />
+		<Unit filename="../src/target/arm_coresight.h" />
+		<Unit filename="../src/target/arm_cti.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/arm_cti.h" />
+		<Unit filename="../src/target/arm_dap.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/arm_disassembler.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/arm_disassembler.h" />
+		<Unit filename="../src/target/arm_dpm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/arm_dpm.h" />
+		<Unit filename="../src/target/arm_jtag.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/arm_jtag.h" />
+		<Unit filename="../src/target/arm_opcodes.h" />
+		<Unit filename="../src/target/arm_semihosting.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/arm_semihosting.h" />
+		<Unit filename="../src/target/arm_simulator.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/arm_simulator.h" />
+		<Unit filename="../src/target/arm_tpiu_swo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/arm_tpiu_swo.h" />
+		<Unit filename="../src/target/armv4_5.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/armv4_5.h" />
+		<Unit filename="../src/target/armv4_5_cache.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/armv4_5_cache.h" />
+		<Unit filename="../src/target/armv4_5_mmu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/armv4_5_mmu.h" />
+		<Unit filename="../src/target/armv7a.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/armv7a.h" />
+		<Unit filename="../src/target/armv7a_cache.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/armv7a_cache.h" />
+		<Unit filename="../src/target/armv7a_cache_l2x.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/armv7a_cache_l2x.h" />
+		<Unit filename="../src/target/armv7a_mmu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/armv7a_mmu.h" />
+		<Unit filename="../src/target/armv7m.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/armv7m.h" />
+		<Unit filename="../src/target/armv7m_trace.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/armv7m_trace.h" />
+		<Unit filename="../src/target/armv8.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/armv8.h" />
+		<Unit filename="../src/target/armv8_cache.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/armv8_cache.h" />
+		<Unit filename="../src/target/armv8_dpm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/armv8_dpm.h" />
+		<Unit filename="../src/target/armv8_opcodes.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/armv8_opcodes.h" />
+		<Unit filename="../src/target/avr32_ap7k.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/avr32_ap7k.h" />
+		<Unit filename="../src/target/avr32_jtag.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/avr32_jtag.h" />
+		<Unit filename="../src/target/avr32_mem.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/avr32_mem.h" />
+		<Unit filename="../src/target/avr32_regs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/avr32_regs.h" />
+		<Unit filename="../src/target/avrt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/avrt.h" />
+		<Unit filename="../src/target/breakpoints.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/breakpoints.h" />
+		<Unit filename="../src/target/cortex_a.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/cortex_a.h" />
+		<Unit filename="../src/target/cortex_m.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/cortex_m.h" />
+		<Unit filename="../src/target/dsp563xx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/dsp563xx.h" />
+		<Unit filename="../src/target/dsp563xx_once.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/dsp563xx_once.h" />
+		<Unit filename="../src/target/dsp5680xx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/dsp5680xx.h" />
+		<Unit filename="../src/target/embeddedice.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/embeddedice.h" />
+		<Unit filename="../src/target/esirisc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/esirisc.h" />
+		<Unit filename="../src/target/esirisc_jtag.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/esirisc_jtag.h" />
+		<Unit filename="../src/target/esirisc_regs.h" />
+		<Unit filename="../src/target/esirisc_trace.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/esirisc_trace.h" />
+		<Unit filename="../src/target/etb.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/etb.h" />
+		<Unit filename="../src/target/etm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/etm.h" />
+		<Unit filename="../src/target/etm_dummy.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/etm_dummy.h" />
+		<Unit filename="../src/target/fa526.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/feroceon.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/hla_target.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/image.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/image.h" />
+		<Unit filename="../src/target/lakemont.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/lakemont.h" />
+		<Unit filename="../src/target/ls1_sap.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/mem_ap.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/mips32.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/mips32.h" />
+		<Unit filename="../src/target/mips32_dmaacc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/mips32_dmaacc.h" />
+		<Unit filename="../src/target/mips32_pracc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/mips32_pracc.h" />
+		<Unit filename="../src/target/mips64.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/mips64.h" />
+		<Unit filename="../src/target/mips64_pracc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/mips64_pracc.h" />
+		<Unit filename="../src/target/mips_ejtag.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/mips_ejtag.h" />
+		<Unit filename="../src/target/mips_m4k.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/mips_m4k.h" />
+		<Unit filename="../src/target/mips_mips64.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/mips_mips64.h" />
+		<Unit filename="../src/target/nds32.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/nds32.h" />
+		<Unit filename="../src/target/nds32_aice.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/nds32_aice.h" />
+		<Unit filename="../src/target/nds32_cmd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/nds32_cmd.h" />
+		<Unit filename="../src/target/nds32_disassembler.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/nds32_disassembler.h" />
+		<Unit filename="../src/target/nds32_edm.h" />
+		<Unit filename="../src/target/nds32_insn.h" />
+		<Unit filename="../src/target/nds32_reg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/nds32_reg.h" />
+		<Unit filename="../src/target/nds32_tlb.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/nds32_tlb.h" />
+		<Unit filename="../src/target/nds32_v2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/nds32_v2.h" />
+		<Unit filename="../src/target/nds32_v3.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/nds32_v3.h" />
+		<Unit filename="../src/target/nds32_v3_common.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/nds32_v3_common.h" />
+		<Unit filename="../src/target/nds32_v3m.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/nds32_v3m.h" />
+		<Unit filename="../src/target/openrisc/jsp_server.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/openrisc/jsp_server.h" />
+		<Unit filename="../src/target/openrisc/or1k.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/openrisc/or1k.h" />
+		<Unit filename="../src/target/openrisc/or1k_du.h" />
+		<Unit filename="../src/target/openrisc/or1k_du_adv.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/openrisc/or1k_tap.h" />
+		<Unit filename="../src/target/openrisc/or1k_tap_mohor.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/openrisc/or1k_tap_vjtag.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/openrisc/or1k_tap_xilinx_bscan.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/quark_d20xx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/quark_x10xx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/register.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/register.h" />
+		<Unit filename="../src/target/riscv/asm.h" />
+		<Unit filename="../src/target/riscv/batch.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/riscv/batch.h" />
+		<Unit filename="../src/target/riscv/debug_defines.h" />
+		<Unit filename="../src/target/riscv/encoding.h" />
+		<Unit filename="../src/target/riscv/gdb_regs.h" />
+		<Unit filename="../src/target/riscv/opcodes.h" />
+		<Unit filename="../src/target/riscv/program.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/riscv/program.h" />
+		<Unit filename="../src/target/riscv/riscv-011.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/riscv/riscv-013.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/riscv/riscv.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/riscv/riscv.h" />
+		<Unit filename="../src/target/riscv/riscv_semihosting.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/rtt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/rtt.h" />
+		<Unit filename="../src/target/semihosting_common.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/semihosting_common.h" />
+		<Unit filename="../src/target/smp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/smp.h" />
+		<Unit filename="../src/target/stm8.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/stm8.h" />
+		<Unit filename="../src/target/target.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/target.h" />
+		<Unit filename="../src/target/target_request.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/target_request.h" />
+		<Unit filename="../src/target/target_type.h" />
+		<Unit filename="../src/target/testee.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/trace.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/trace.h" />
+		<Unit filename="../src/target/x86_32_common.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/x86_32_common.h" />
+		<Unit filename="../src/target/xscale.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/target/xscale.h" />
+		<Unit filename="../src/transport/transport.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/transport/transport.h" />
+		<Unit filename="../src/xsvf/xsvf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../testing/examples/AT91R40008Test/inc/typedefs.h" />
+		<Unit filename="../testing/examples/AT91R40008Test/prj/at91r40008_reset.script" />
+		<Unit filename="../testing/examples/LPC2148Test/inc/typedefs.h" />
+		<Unit filename="../testing/examples/LPC2294Test/inc/typedefs.h" />
+		<Unit filename="../testing/examples/SAM7S256Test/inc/typedefs.h" />
+		<Unit filename="../testing/examples/SAM7S256Test/prj/sam7s256_reset.script" />
+		<Unit filename="../testing/examples/SAM7X256Test/inc/typedefs.h" />
+		<Unit filename="../testing/examples/SAM7X256Test/prj/sam7x256_reset.script" />
+		<Unit filename="../testing/examples/STR710JtagSpeed/inc/typedefs.h" />
+		<Unit filename="../testing/examples/STR710Test/inc/typedefs.h" />
+		<Unit filename="../testing/examples/STR710Test/prj/str710_program.script" />
+		<Unit filename="../testing/examples/STR912Test/inc/typedefs.h" />
+		<Unit filename="../testing/examples/STR912Test/prj/str912_program.script" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

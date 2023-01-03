@@ -22,6 +22,10 @@
 #ifndef OPENOCD_HELPER_TYPES_H
 #define OPENOCD_HELPER_TYPES_H
 
+#include<inttypes.h>
+#include <stdbool.h>
+
+
 #ifdef HAVE_CONFIG_H
 #include "config.h"
 #endif
